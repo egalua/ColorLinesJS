@@ -1,0 +1,180 @@
+html, body { 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+    align-items: center;
+}
+.lines{
+    position: relative;
+    background: #000;
+    padding: 15px;
+    border: 1px solid darkgrey;
+}
+.lines__header{
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.next-ball-box{
+    justify-content: center;
+    display: flex;
+    padding: 0 7px;
+    border-radius: 18px;
+}
+
+.highscore{
+    position: absolute;
+    height: 50px;
+    width: 135px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.score{
+    position: absolute;
+    height: 50px;
+    width: 135px;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.highscore__value, .score__value{
+    font-size: 38px;
+    font-family: 'Arial Narrow';
+    color: #19f0f5;
+}
+.lines__footer{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.lines__new-game-button, .lines__reset-highscore-button{
+    box-sizing: border-box;
+    padding: 5px 0px;
+    border: 1px solid #222;
+    cursor: default;
+    text-align: center;
+    padding: 5px 15px;
+}
+.new-game-button__label, .reset-highscore-button__label{
+    font-size: 20px;
+    font-family: 'Arial Narrow';
+    color: #19f0f5;
+}
+.lines__reset-score-button{
+
+}
+
+.gamefield{
+    box-sizing: border-box;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.row{
+    display: flex;
+    background: #efefef;
+}
+.next-ball-box__cell{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    position: relative;    
+}
+.cell{
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+}
+.cell__ball, .next-ball-box__ball{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    position: absolute;
+    left:0; right:0;
+    bottom: 0px; 
+    top: 0px;
+    display: none;
+}
+.next-ball-box__ball{
+    display: block;
+}
+.cell__ball_color-green{
+    background: url('img/green+N.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-yellow{
+    background: url('img/yellow+S.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-orange{
+    background: url('img/orange+C.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-red{
+    background: red;
+    background: url('img/red+P.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-blue{
+    background: url('img/blue+O.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-indigo{
+    background: url('img/indigo+H(bold).png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_color-violet{
+    background: violet;
+    background: url('img/violet+He.png') no-repeat 50% 50%;
+    background-size: contain;
+}
+.cell__ball_visible{
+    display:block;
+}
+
+.cell__ball_jumps-animation{
+    animation-name: jumping-ball;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes jumping-ball{
+    0%   {transform: translateY(0);}
+    50%  {transform: translateY(3.5px);}
+    100% {transform: translateY(0);}
+}
+
+.cell__ball_move-animation{
+    width: 15px;
+    height: 15px; 
+    background-size: contain;
+}
+
+.lines_js-move-animation-duration{
+    animation-duration: 0.08s;
+}

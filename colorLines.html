@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="lines lines_js-move-animation-duration">
+            <div class="lines__header">
+                <div class="score">
+                    <span class="score__value">0</span>
+                </div>    
+                <div class="next-ball-box">
+                    <div class="next-ball-box__cell"> <div class="next-ball-box__ball"></div> </div>
+                    <div class="next-ball-box__cell"> <div class="next-ball-box__ball"></div> </div>
+                    <div class="next-ball-box__cell"> <div class="next-ball-box__ball"></div> </div>
+                </div>
+                <div class="highscore">
+                    <span class="highscore__value">0</span>
+                </div>
+            </div>
+            <div class="gamefield">
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+                <div class="row">
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                    <div class="cell"> <div class="cell__ball"></div> </div>
+                </div>
+            </div>
+
+            <div class="lines__footer">
+                <div class="lines__new-game-button new-game-button">
+                    <span class="new-game-button__label">Start new game</span>
+                </div>
+                <div class="lines__reset-highscore-button reset-highscore-button">
+                    <span class="reset-highscore-button__label">Reset high score</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+
+    <script>
+        var field = document.querySelector('.lines');
+        var ball = field.querySelector('.cell__ball');
+        var isJumping = false;
+        
+        var lines = new Lines('lines');
+        
+        // field.addEventListener('click', function(e){
+        //     var target = e.target;
+            
+        //     while(!target.classList.contains('cell') && !target.classList.contains('lines')){
+        //         target = target.parentNode;
+        //     }
+            
+        //     if(isJumping){
+        //         var jumpsBall = field.querySelector('.cell__ball_jumps-animation');
+        //         if(jumpsBall) jumpsball.classList.remove('cell__ball_jumps-animation');
+        //         isJumping = false;
+        //     } 
+        //     if(target.children.length) {
+        //         var ball = target.querySelector('.cell__ball');
+
+        //         if(!isJumping && ball!=jumpsball){
+        //             ball.classList.add('cell__ball_jumps-animation');
+        //             isJumping = true;
+        //         } else {
+        //             ball.classList.remove('cell__ball_jumps-animation');
+        //             isJumping = false;
+        //         }
+        //     } 
+            
+
+        // });
+    </script>
+</body>
+</html>
