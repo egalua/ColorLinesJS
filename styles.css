@@ -65,7 +65,6 @@ html, body {
 }
 .lines__new-game-button, .lines__reset-highscore-button{
     box-sizing: border-box;
-    padding: 5px 0px;
     border: 1px solid #222;
     cursor: default;
     text-align: center;
@@ -177,4 +176,35 @@ html, body {
 
 .lines_js-move-animation-duration{
     animation-duration: 0.08s;
+}
+
+@media (max-width: 480px) {
+    .highscore{
+        width: 95.575221238938053097345132743363px;
+        height: 35.3367748279252704031465093412px;
+    }
+    .score{
+        width: 95.575221238938053097345132743363px;
+        height: 35.3367748279252704031465093412px
+    }
+    .next-ball-box__cell{
+        width: 35.398230088495575221238938053097px;
+        height: 35.398230088495575221238938053097px;
+    }
+    .cell{
+        width: 35.398230088495575221238938053097px;
+        height: 35.398230088495575221238938053097px;
+    }
+    .cell__ball{
+        width: 28.318584070796460176991150442478px;
+        height: 28.318584070796460176991150442478px;
+    }
+    .cell__ball_move-animation{
+        width: 10.619469026548672566371681415929px;
+        height: 10.619469026548672566371681415929px;
+    }
+    .next-ball-box__ball{
+        width: 28.318584070796460176991150442478px;
+        height: 28.318584070796460176991150442478px;
+    }
 }
